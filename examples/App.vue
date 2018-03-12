@@ -31,7 +31,7 @@
         </movement-system>
 
         <oimo-world :options="{ gravity: [0, 1, 0] }">
-          <space-system :m-scale="10 ** 4">
+          <space-system :m-scale="10 * 4">
             <space-object v-for="t in textures" :key="t">
               <oimo-body :options="{ move: true, density: 1 }">
                 <cube :texture="t" :size="1"></cube>
